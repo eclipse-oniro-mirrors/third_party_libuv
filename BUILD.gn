@@ -383,6 +383,7 @@ if (defined(ohos_lite)) {
     subsystem_name = "thirdparty"
     innerapi_tags = [ "platformsdk" ]
     part_name = "libuv"
+    version_script = "libuv-version_script.map"
     if (is_ohos) {
       output_extension = "so"
       external_deps = [ "hilog:libhilog", "faultloggerd:libbacktrace_local" ]
