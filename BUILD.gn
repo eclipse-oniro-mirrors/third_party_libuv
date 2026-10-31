@@ -383,8 +383,8 @@ if (defined(ohos_lite)) {
     subsystem_name = "thirdparty"
     innerapi_tags = [ "platformsdk" ]
     part_name = "libuv"
-    version_script = "libuv-version_script.map"
     if (is_ohos) {
+      version_script = "libuv-version_script.map"
       output_extension = "so"
       external_deps = [ "hilog:libhilog", "faultloggerd:libbacktrace_local" ]
       if (is_clang && target_cpu == "arm64" && defined(build_ext_path)) {
